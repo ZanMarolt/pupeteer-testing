@@ -1,0 +1,15 @@
+{
+  "name": "pupeteer-testing",
+  "version": "1.0.0",
+  "description": "demo tests",
+  "main": "index.js",
+  "author": "Zan Marolt <zan.marolt@3fs.si>",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^24.8.0",
+    "puppeteer": "^1.15.0"
+  },
+  "scripts": {
+    "test:accessibility": "jest -t Accessibility-e2e"
+  }
+}
