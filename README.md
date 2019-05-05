@@ -1,6 +1,6 @@
 # End to End demo tests
 
-Testing the [ZanChat](zan-chat.herokuapp.com) app.
+Testing the [ZanChat](https://zan-chat.herokuapp.com) app.
 
 Install
 ```
