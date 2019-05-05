@@ -9,7 +9,7 @@ const waitAndGetText = async (page, selector) => {
 
 const openChat = async (browser) => {
     const page = await browser.newPage();
-    await page.goto('http://localhost:3002/');
+    await page.goto('https://zan-chat.herokuapp.com/');
 
     await page.waitFor('#num-clients:not(:empty)');
 
@@ -42,9 +42,8 @@ describe('Multi-user-e2e', () => {
     await sendMessage(page1, 'Hello, Google IO!');
     await sendMessage(page2, 'Hello, Zan!');
 
-
     const displayedText1 = await waitAndGetText(page1, '.message');
-    const displayedText2 = await waitAndGetText(page1, '.message');
+    const displayedText2 = await waitAndGetText(page2, '.message');
 
     expect(displayedText1).toBe('Hello, Zan!');
     expect(displayedText2).toBe('Hello, Google IO!');

@@ -17,7 +17,7 @@ describe('Accessibility-e2e', () => {
   it('application loads, shows number of online users, can send a message, and is accessible', async () => {
 
     const page = await browser.newPage();
-    await page.goto('http://localhost:3002/');
+    await page.goto('https://zan-chat.herokuapp.com/');
 
     const numClients = await waitAndGetText(page, '#num-clients:not(:empty)');
     expect(numClients).toBe('1');

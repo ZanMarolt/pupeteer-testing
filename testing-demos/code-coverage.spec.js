@@ -20,7 +20,7 @@ describe('Code-coverage-e2e', () => {
 
     await page.coverage.startJSCoverage();
 
-    await page.goto('http://localhost:3002/');
+    await page.goto('https://zan-chat.herokuapp.com/');
 
     const numClients = await waitAndGetText(page, '#num-clients:not(:empty)');
     expect(numClients).toBe('1');
