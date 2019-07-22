@@ -12,6 +12,7 @@
     "puppeteer-to-istanbul": "^1.2.2"
   },
   "scripts": {
+    "test:track": "jest -t Track-e2e",
     "test:accessibility": "jest -t Accessibility-e2e",
     "test:code-coverage": "jest -t Code-coverage-e2e && nyc report --reporter=html",
     "test:multi-user": "jest -t Multi-user-e2e"
